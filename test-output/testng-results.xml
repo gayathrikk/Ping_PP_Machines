@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-20T14:22:53 IST" name="Default suite" finished-at="2024-01-20T14:23:09 IST" duration-ms="15965">
+  <suite started-at="2024-01-20T17:14:55 IST" name="Default suite" finished-at="2024-01-20T17:15:37 IST" duration-ms="41643">
     <groups>
     </groups>
-    <test started-at="2024-01-20T14:22:53 IST" name="Default test" finished-at="2024-01-20T14:23:09 IST" duration-ms="15965">
-      <class name="com.machines.Ping_Status.public_Machines">
-        <test-method signature="PrivateDataportal()[pri:1, instance:com.machines.Ping_Status.public_Machines@2fd1433e]" started-at="2024-01-20T14:22:54 IST" name="PrivateDataportal" finished-at="2024-01-20T14:23:00 IST" duration-ms="6405" status="PASS">
+    <test started-at="2024-01-20T17:14:55 IST" name="Default test" finished-at="2024-01-20T17:15:37 IST" duration-ms="41643">
+      <class name="com.machines.Ping_Status.Dev_Machines">
+        <test-method signature="dev2nathan()[pri:1, instance:com.machines.Ping_Status.Dev_Machines@69997e9d]" started-at="2024-01-20T17:14:55 IST" name="dev2nathan" finished-at="2024-01-20T17:14:58 IST" duration-ms="3452" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PrivateDataportal -->
-        <test-method signature="PrivateColab()[pri:2, instance:com.machines.Ping_Status.public_Machines@2fd1433e]" started-at="2024-01-20T14:23:00 IST" name="PrivateColab" finished-at="2024-01-20T14:23:09 IST" duration-ms="9522" status="PASS">
+        </test-method> <!-- dev2nathan -->
+        <test-method signature="dev2mani()[pri:2, instance:com.machines.Ping_Status.Dev_Machines@69997e9d]" started-at="2024-01-20T17:14:58 IST" name="dev2mani" finished-at="2024-01-20T17:15:05 IST" duration-ms="6169" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PrivateColab -->
-      </class> <!-- com.machines.Ping_Status.public_Machines -->
+        </test-method> <!-- dev2mani -->
+        <test-method signature="dev2sam()[pri:3, instance:com.machines.Ping_Status.Dev_Machines@69997e9d]" started-at="2024-01-20T17:15:05 IST" name="dev2sam" finished-at="2024-01-20T17:15:11 IST" duration-ms="6781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dev2sam -->
+        <test-method signature="dev2meena()[pri:4, instance:com.machines.Ping_Status.Dev_Machines@69997e9d]" started-at="2024-01-20T17:15:11 IST" name="dev2meena" finished-at="2024-01-20T17:15:18 IST" duration-ms="6116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dev2meena -->
+        <test-method signature="dev2sasi()[pri:5, instance:com.machines.Ping_Status.Dev_Machines@69997e9d]" started-at="2024-01-20T17:15:18 IST" name="dev2sasi" finished-at="2024-01-20T17:15:24 IST" duration-ms="6907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dev2sasi -->
+        <test-method signature="dev2gayathri()[pri:6, instance:com.machines.Ping_Status.Dev_Machines@69997e9d]" started-at="2024-01-20T17:15:24 IST" name="dev2gayathri" finished-at="2024-01-20T17:15:31 IST" duration-ms="6120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dev2gayathri -->
+        <test-method signature="dev2kamal()[pri:7, instance:com.machines.Ping_Status.Dev_Machines@69997e9d]" started-at="2024-01-20T17:15:31 IST" name="dev2kamal" finished-at="2024-01-20T17:15:37 IST" duration-ms="6034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dev2kamal -->
+      </class> <!-- com.machines.Ping_Status.Dev_Machines -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
