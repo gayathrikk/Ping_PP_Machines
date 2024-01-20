@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.machines.Ping_Status.PP_Machines">
+      <class name="com.machines.Ping_Status.dgx_Machines">
         <methods>
-          <include name="pp5v15"/>
-          <include name="pp7v15"/>
-          <include name="pp7v5"/>
-          <include name="pp5v5"/>
+          <include name="dgx1"/>
         </methods>
-      </class> <!-- com.machines.Ping_Status.PP_Machines -->
+      </class> <!-- com.machines.Ping_Status.dgx_Machines -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

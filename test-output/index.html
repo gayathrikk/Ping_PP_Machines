@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.dgx_Machines" class="method navigator-link" hash-for-method="dgx1">dgx1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,37 +118,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.Dev_Machines" class="method navigator-link" hash-for-method="dev2gayathri">dev2gayathri</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.dgx_Machines" class="method navigator-link" hash-for-method="dgx2">dgx2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.Dev_Machines" class="method navigator-link" hash-for-method="dev2kamal">dev2kamal</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.Dev_Machines" class="method navigator-link" hash-for-method="dev2mani">dev2mani</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.Dev_Machines" class="method navigator-link" hash-for-method="dev2meena">dev2meena</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.Dev_Machines" class="method navigator-link" hash-for-method="dev2nathan">dev2nathan</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.Dev_Machines" class="method navigator-link" hash-for-method="dev2sam">dev2sam</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.Dev_Machines" class="method navigator-link" hash-for-method="dev2sasi">dev2sasi</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.machines.Ping_Status.dgx_Machines" class="method navigator-link" hash-for-method="dgx3">dgx3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -149,59 +138,73 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.machines.Ping_Status.Dev_Machines</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.machines.Ping_Status.dgx_Machines</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="dev2gayathri">
-                  </a> <!-- dev2gayathri -->
-                  <span class="method-name">dev2gayathri</span>
+                  <a name="dgx1">
+                  </a> <!-- dgx1 -->
+                  <span class="method-name">dgx1</span>
+                  <div class="stack-trace">java.lang.AssertionError: dgx1.humanbrain.in is not pingable.
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.machines.Ping_Status.dgx_Machines.testPing(dgx_Machines.java:62)
+	at com.machines.Ping_Status.dgx_Machines.dgx1(dgx_Machines.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.machines.Ping_Status.dgx_Machines</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dgx2">
+                  </a> <!-- dgx2 -->
+                  <span class="method-name">dgx2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="dev2kamal">
-                  </a> <!-- dev2kamal -->
-                  <span class="method-name">dev2kamal</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="dev2mani">
-                  </a> <!-- dev2mani -->
-                  <span class="method-name">dev2mani</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="dev2meena">
-                  </a> <!-- dev2meena -->
-                  <span class="method-name">dev2meena</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="dev2nathan">
-                  </a> <!-- dev2nathan -->
-                  <span class="method-name">dev2nathan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="dev2sam">
-                  </a> <!-- dev2sam -->
-                  <span class="method-name">dev2sam</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="dev2sasi">
-                  </a> <!-- dev2sasi -->
-                  <span class="method-name">dev2sasi</span>
+                  <a name="dgx3">
+                  </a> <!-- dgx3 -->
+                  <span class="method-name">dgx3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,7 +212,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--618638125/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-125294917/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -218,7 +221,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.machines.Ping_Status.Dev_Machines&quot;/&gt;
+      &lt;class name=&quot;com.machines.Ping_Status.dgx_Machines&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -258,40 +261,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'dev2sasi')
-data.setCell(0, 2, 'com.machines.Ping_Status.Dev_Machines')
-data.setCell(0, 3, 6907);
+data.setCell(0, 1, 'dgx3')
+data.setCell(0, 2, 'com.machines.Ping_Status.dgx_Machines')
+data.setCell(0, 3, 6152);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'dev2sam')
-data.setCell(1, 2, 'com.machines.Ping_Status.Dev_Machines')
-data.setCell(1, 3, 6781);
+data.setCell(1, 1, 'dgx2')
+data.setCell(1, 2, 'com.machines.Ping_Status.dgx_Machines')
+data.setCell(1, 3, 6038);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'dev2mani')
-data.setCell(2, 2, 'com.machines.Ping_Status.Dev_Machines')
-data.setCell(2, 3, 6169);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'dev2gayathri')
-data.setCell(3, 2, 'com.machines.Ping_Status.Dev_Machines')
-data.setCell(3, 3, 6120);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'dev2meena')
-data.setCell(4, 2, 'com.machines.Ping_Status.Dev_Machines')
-data.setCell(4, 3, 6116);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'dev2kamal')
-data.setCell(5, 2, 'com.machines.Ping_Status.Dev_Machines')
-data.setCell(5, 3, 6034);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'dev2nathan')
-data.setCell(6, 2, 'com.machines.Ping_Status.Dev_Machines')
-data.setCell(6, 3, 3452);
+data.setCell(2, 1, 'dgx1')
+data.setCell(2, 2, 'com.machines.Ping_Status.dgx_Machines')
+data.setCell(2, 3, 3100);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -317,34 +304,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.machines.Ping_Status.Dev_Machines</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.machines.Ping_Status.dgx_Machines</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">dev2nathan</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dgx1</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">dev2mani</span>
-                <span class="method-start">3465 ms</span>
+                <span class="method-name">dgx2</span>
+                <span class="method-start">3111 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">dev2sam</span>
-                <span class="method-start">9640 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">dev2meena</span>
-                <span class="method-start">16424 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">dev2sasi</span>
-                <span class="method-start">22545 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">dev2gayathri</span>
-                <span class="method-start">29454 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">dev2kamal</span>
-                <span class="method-start">35579 ms</span>
+                <span class="method-name">dgx3</span>
+                <span class="method-start">9154 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
