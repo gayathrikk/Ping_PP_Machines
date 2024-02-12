@@ -13,7 +13,7 @@ public class apollo_Machines {
 	 @Test(priority=1)
 	    public void apollo1() {
 	        testPing("apollo1.humanbrain.in");
-	        testPing("172.16.20.234");
+	        testPing("172.20.23.21");
 	    }
 
 	    @Test(priority=2)
@@ -31,7 +31,7 @@ public class apollo_Machines {
 	    @Test(priority=4)
 	    public void apollo6() {
 	    	testPing("ap6.humanbrain.in");
-	    	testPing("172.16.20.117");
+	    	testPing("172.20.23.109");
 	    }
 	    
 	   

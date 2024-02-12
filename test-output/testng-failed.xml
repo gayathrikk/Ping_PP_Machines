@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.machines.Ping_Status.dgx_Machines">
+      <class name="com.machines.Ping_Status.apollo_Machines">
         <methods>
-          <include name="dgx1"/>
+          <include name="apollo1"/>
         </methods>
-      </class> <!-- com.machines.Ping_Status.dgx_Machines -->
+      </class> <!-- com.machines.Ping_Status.apollo_Machines -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
