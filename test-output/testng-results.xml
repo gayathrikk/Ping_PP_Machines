@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T10:18:02 IST" name="Default suite" finished-at="2024-02-12T10:18:34 IST" duration-ms="31758">
+  <suite started-at="2024-02-12T10:38:23 IST" name="Default suite" finished-at="2024-02-12T10:38:56 IST" duration-ms="32118">
     <groups>
     </groups>
-    <test started-at="2024-02-12T10:18:02 IST" name="Default test" finished-at="2024-02-12T10:18:34 IST" duration-ms="31758">
+    <test started-at="2024-02-12T10:38:23 IST" name="Default test" finished-at="2024-02-12T10:38:56 IST" duration-ms="32118">
       <class name="com.machines.Ping_Status.PP_Machines">
-        <test-method signature="pp1()[pri:1, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:02 IST" name="pp1" finished-at="2024-02-12T10:18:09 IST" duration-ms="6384" status="PASS">
+        <test-method signature="pp1()[pri:1, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:23 IST" name="pp1" finished-at="2024-02-12T10:38:30 IST" duration-ms="6095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp1 -->
-        <test-method signature="pp2()[pri:2, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:09 IST" name="pp2" finished-at="2024-02-12T10:18:12 IST" duration-ms="3089" status="PASS">
+        <test-method signature="pp2()[pri:2, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:30 IST" name="pp2" finished-at="2024-02-12T10:38:33 IST" duration-ms="3156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp2 -->
-        <test-method signature="pp3v5()[pri:3, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:12 IST" name="pp3v5" finished-at="2024-02-12T10:18:15 IST" duration-ms="3105" status="PASS">
+        <test-method signature="pp3v5()[pri:3, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:33 IST" name="pp3v5" finished-at="2024-02-12T10:38:36 IST" duration-ms="3138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp3v5 -->
-        <test-method signature="pp4v5()[pri:4, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:15 IST" name="pp4v5" finished-at="2024-02-12T10:18:18 IST" duration-ms="3098" status="PASS">
+        <test-method signature="pp4v5()[pri:4, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:36 IST" name="pp4v5" finished-at="2024-02-12T10:38:39 IST" duration-ms="3112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp4v5 -->
-        <test-method signature="pp4v15()[pri:5, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:18 IST" name="pp4v15" finished-at="2024-02-12T10:18:21 IST" duration-ms="3345" status="PASS">
+        <test-method signature="pp4v15()[pri:5, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:39 IST" name="pp4v15" finished-at="2024-02-12T10:38:42 IST" duration-ms="3322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp4v15 -->
-        <test-method signature="pp5v5()[pri:6, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:21 IST" name="pp5v5" finished-at="2024-02-12T10:18:25 IST" duration-ms="3289" status="PASS">
+        <test-method signature="pp5v5()[pri:6, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:42 IST" name="pp5v5" finished-at="2024-02-12T10:38:45 IST" duration-ms="3113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp5v5 -->
-        <test-method signature="pp5v15()[pri:7, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:25 IST" name="pp5v15" finished-at="2024-02-12T10:18:28 IST" duration-ms="3091" status="PASS">
+        <test-method signature="pp5v15()[pri:7, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:45 IST" name="pp5v15" finished-at="2024-02-12T10:38:49 IST" duration-ms="3898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp5v15 -->
-        <test-method signature="pp7v5()[pri:8, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:28 IST" name="pp7v5" finished-at="2024-02-12T10:18:31 IST" duration-ms="3222" status="PASS">
+        <test-method signature="pp7v5()[pri:8, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:49 IST" name="pp7v5" finished-at="2024-02-12T10:38:52 IST" duration-ms="3139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp7v5 -->
-        <test-method signature="pp7v15()[pri:9, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:18:31 IST" name="pp7v15" finished-at="2024-02-12T10:18:34 IST" duration-ms="3094" status="PASS">
+        <test-method signature="pp7v15()[pri:9, instance:com.machines.Ping_Status.PP_Machines@4de4b452]" started-at="2024-02-12T10:38:52 IST" name="pp7v15" finished-at="2024-02-12T10:38:56 IST" duration-ms="3104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pp7v15 -->
