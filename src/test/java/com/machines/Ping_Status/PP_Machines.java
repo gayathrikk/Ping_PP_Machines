@@ -12,7 +12,7 @@ public class PP_Machines {
 	 @Test(priority=1)
 	    public void pp1() {
 	        testPing("pp1.humanbrain.in");
-	        testPing("172.20.24.1");
+	        testPing("172.20.24.11");
 	    }
 
 	    @Test(priority=2)
