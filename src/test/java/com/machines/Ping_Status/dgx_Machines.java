@@ -13,7 +13,7 @@ public class dgx_Machines {
 	 @Test(priority=1)
 	    public void dgx1() {
 	        testPing("dgx1.humanbrain.in");
-	        testPing("172.11.20.228");
+	        testPing("172.20.24.102");
 	    }
 
 	    @Test(priority=2)
