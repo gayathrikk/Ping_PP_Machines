@@ -6,6 +6,7 @@
       <class name="com.machines.Ping_Status.dgx_Machines">
         <methods>
           <include name="dgx1"/>
+          <include name="dgx2"/>
         </methods>
       </class> <!-- com.machines.Ping_Status.dgx_Machines -->
     </classes>

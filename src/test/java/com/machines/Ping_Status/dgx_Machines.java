@@ -1,71 +1,91 @@
 package com.machines.Ping_Status;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.jcraft.jsch.ChannelExec;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.Session;
+
 public class dgx_Machines {
 	
 
 	 @Test(priority=1)
-	    public void dgx1() {
-	        testPing("dgx1.humanbrain.in");
-	        testPing("172.20.24.102");
+	    public void dgx1() throws Exception {
+	        connect("dgx1.humanbrain.in");
+	        
 	    }
 
 	    @Test(priority=2)
-	    public void dgx2() {
-	        testPing("dgx2.humanbrain.in");
-	        testPing("172.20.23.50");
+	    public void dgx2() throws Exception {
+	        connect("dgx2.humanbrain.in");
+	        
 	    }
 	    
 
 	    @Test(priority=2)
-	    public void dgx3() {
-	        testPing("dgx3.humanbrain.in");
-	        testPing("172.20.23.53");
+	    public void dgx3() throws Exception {
+	    	connect("dgx3.humanbrain.in");
+	        
 	    }
 
 	   
 	   
+	    public static void connect(String... values) throws Exception {
+		    
+		    Session session = null;
+		    ChannelExec channel = null;
 
-	    private void testPing(String machine) {
-	        try {
-	            // Command to execute
-	            String command = "ping -c 4 " + machine; // -c 4 sets the count of ping requests
+		    try {
+		        session = new JSch().getSession("hbp", "apollo2.humanbrain.in", 22);
+		        session.setPassword("Health#123");
+		        session.setConfig("StrictHostKeyChecking", "no");
+		        session.connect();
+		        
+		        for(String s:values){
+		        if (channel != null) {
+		            channel.disconnect();
+		        } 
+		        channel = (ChannelExec) session.openChannel("exec"); 
+		        channel.setCommand("ping -c 7 "+s);
+		        ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
+		        channel.setOutputStream(responseStream);
+		        channel.connect();
+		        
+		        while (channel.isConnected()) {
+		            Thread.sleep(100);
+		        }
+		        
+		        String responseString = new String(responseStream.toByteArray());
+		        // System.out.println(responseString);
+		        String[] lines = responseString.split("\\r?\\n|\\r");
+		        try{
+		        String line = lines[lines.length-2];
+		        String[] str = line.split(", ", 3);
+		        System.out.println(lines[lines.length-3]);
+		        System.out.println(line);
+		        // System.out.println(str[1].charAt(0));
+		        int r = Integer.parseInt(String.valueOf(str[1].charAt(0)));
+		        Assert.assertNotEquals(r, 0);
+		        // System.out.println(r);
+		    }
+		        catch(Exception e){
+		            System.err.println("Unable to ping : "+s);
+		        }
 
-	            // Create ProcessBuilder
-	            ProcessBuilder processBuilder = new ProcessBuilder("bash", "-c", command);
+		    }
+		    } finally {
+		        if (session != null) {
+		            session.disconnect();
+		        }
+		    }
+		}
+		}
 
-	            // Start the process
-	            Process process = processBuilder.start();
 
-	            // Read the output of the command
-	            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-	            String line;
-	            while ((line = reader.readLine()) != null) {
-	                System.out.println(line);
-	            }
 
-	            // Wait for the process to complete
-	            int exitCode = process.waitFor();
-	            System.out.println("Exited with error code " + exitCode);
-
-	            // Check the exit code to determine success or failure
-	            if (exitCode == 0) {
-	                System.out.println(machine + " is pingable.");
-	            } else {
-	                System.out.println(machine + " is not pingable.");
-	                Assert.fail(machine + " is not pingable.");
-	            }
-
-	        } catch (IOException | InterruptedException e) {
-	            e.printStackTrace();
-	            Assert.fail("Exception occurred while pinging " + machine);
-	        }
-	    }
-
-}

@@ -42,8 +42,12 @@
     <artifactId>selenium-java</artifactId>
     <version>3.141.59</version>
 </dependency>
-
-    <dependency>
+<dependency>
+    <groupId>com.jcraft</groupId>
+    <artifactId>jsch</artifactId>
+    <version>0.1.55</version> <!-- Or the latest version -->
+</dependency>
+ <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-chrome-driver</artifactId>
     <version>3.141.59</version> <!-- Use the desired version -->
@@ -70,7 +74,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M5</version>
           <configuration>
-            <test>com.machines.Ping_Status.PP_Machines</test>
+            <test>com.machines.Ping_Status.apollo_Machines</test>
           </configuration>
         </plugin>
       </plugins>
