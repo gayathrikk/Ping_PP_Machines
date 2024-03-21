@@ -22,7 +22,7 @@ public class PP_Machines {
 
 	    @Test(priority=2)
 	    public void pp2() throws Exception {
-	        connect("pp2v5.humanbrain.in");
+	        connect("pp2.humanbrain.in");
 	        
 	    }
 
